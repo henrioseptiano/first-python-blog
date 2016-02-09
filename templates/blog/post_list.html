@@ -6,5 +6,9 @@
  <body>
       <p>Hi There!</p>
       <p>It Works!</p>
+
+      {% for post in posts %}
+              {{ post.text|linebreaks }}
+      {% endfor %}
  </body>
  </html>
